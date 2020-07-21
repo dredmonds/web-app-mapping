@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #f5f1f1;
+}
+.topnav .search-container {
+  float: right;
+}
+.form-box {
+  margin: auto;
+}
