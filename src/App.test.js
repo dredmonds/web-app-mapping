@@ -1,9 +1,23 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { shallow } from 'enzyme';
 import App from './App';
+import UserNavbarView from './components/UserNavbarView';
+import MapView from './components/MapView';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('The App container', () => {
+  it('renders App', () => {
+   shallow(<App />);
+  });
+});
+
+describe('<UserNavbarView />', () => {
+  it('renders UserNavbarView', () => {
+    shallow(<UserNavbarView />);
+  });
+});
+
+describe('<MapView />', () => {
+  it('renders MapView', () => {
+    shallow(<MapView />);
+  });
 });

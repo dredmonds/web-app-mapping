@@ -6,7 +6,6 @@ import MarkerPopup from './MarkerPopup';
 
 const UserMarkers = (props) => {
   const { users } = props;
-console.log(users);
   const markers = users.map((user, index) => (
     <Marker key={index} position={[user.latitude, user.longitude]} icon={UserLocationIcon}>
       <MarkerPopup data={user}/>
